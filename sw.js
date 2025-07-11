@@ -1,7 +1,7 @@
 const CACHE_NAME = 'gale-nene-v1';
 const urlsToCache = [
   '/',
-  './about.html',
+  './index.html',
   './assets/css/style-starter.css',
   './assets/images/pexels-mali-64208.jpg',
   './favicon.svg'
