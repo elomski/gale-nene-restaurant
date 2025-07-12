@@ -1,21 +1,32 @@
 <!doctype html>
 <html lang="en">
 
+
+
+
+
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Coffee Cafe - Restaurants Category Bootstrap Responsive Template | About : AmnaCode</title>
+  <title>Restaurant Senegalais GALE-NENE</title>
 
   <link href="//fonts.googleapis.com/css?family=Mukta:300,400,500" rel="stylesheet">
-
-  <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
 
+  <!-- PWA meta -->
+  <meta name="theme-color" content="#f4e6d4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+  <meta name="apple-mobile-web-app-title" content="Restaurant Senegalais GALE-NENE">
 
+  <!-- Manifest + Icons -->
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <link rel="icon" type="image/png" href="/icons/icon-192x192.png">
 
-  <style>
+  <!-- Style -->
+    <style>
     .product-card {
       border: 1px solid #c8e6c9;
       border-radius: 10px;
@@ -81,21 +92,21 @@
       border-color: #28a745 !important;
     }
   </style>
-  <link rel="icon" href="./favicon.svg" type="image/png">
-    <script>
+
+  <!-- Service Worker -->
+  <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./sw.js')
-          .then((registration) => {
-            console.log('Service Worker registered with scope:', registration.scope);
-          })
-          .catch((error) => {
-            console.log('Service Worker registration failed:', error);
-          });
+          .then(reg => console.log('Service Worker registered:', reg.scope))
+          .catch(err => console.error('Service Worker error:', err));
       });
     }
   </script>
 </head>
+
+
+
 
 <body>
   <!--header-->
@@ -145,23 +156,23 @@
       <ul class="nav nav-pills" id="pills-tab1" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="pills-team1-tab" data-toggle="pill" href="#pills-team1" role="tab"
-            aria-controls="pills-team1" aria-selected="true"><img src="./assets/images/icons8-chicken-64 (1).png"
+            aria-controls="pills-team1" aria-selected="true"><img src="./assets/images/chicken-leg.png"
               class="img-fluid" alt="" />
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="pills-team2-tab" data-toggle="pill" href="#pills-team2" role="tab"
-            aria-controls="pills-team2" aria-selected="false"><img src="./assets/images/icons8-beef-100.png"
+            aria-controls="pills-team2" aria-selected="false"><img src="./assets/images/beef.png"
               class="img-fluid" alt="" /></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="pills-team3-tab" data-toggle="pill" href="#pills-team3" role="tab"
-            aria-controls="pills-team3" aria-selected="false"><img src="./assets/images/icons8-kitchen-100.png"
+            aria-controls="pills-team3" aria-selected="false"><img src="./assets/images/fried-rice.png"
               class="img-fluid" alt="" /></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="pills-team4-tab" data-toggle="pill" href="#pills-team4" role="tab"
-            aria-controls="pills-team4" aria-selected="false"><img src="./assets/images/icons8-fish-100 (1).png"
+            aria-controls="pills-team4" aria-selected="false"><img src="./assets/images/fish.png"
               class="img-fluid" alt="" /></a>
         </li>
       </ul>
@@ -1200,7 +1211,7 @@
           <img src="./assets/images/Restaurant GALE-NENE.png" alt="restaurant GALE-NENE" title="restaurant GALE-NENE"
             style="height:80px; border-radius: 50%;" />
         </a>
-        <h2 class="col-lg-4"><a href="">Restaurant GALE-NENE</a></h2>
+        <h2 class="col-lg-6"><a href="">Restaurant GALE-NENE</a></h2>
            </div>
          
           <p>Nous preparons de la delicieuse nourriture a tous les amoureux de la bonne nourriture Senegalaise. Nous sommes une equipe qui dedient notre Thieboudienne a tout les fans qui savourent la bonne nourriture Senegalaise</p>

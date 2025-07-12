@@ -1,10 +1,10 @@
 const CACHE_NAME = 'gale-nene-v1';
 const urlsToCache = [
   '/',
-  './index.html',
-  './assets/css/style-starter.css',
-  './assets/images/pexels-mali-64208.jpg',
-  './favicon.svg'
+  '/index.html',
+  '/assets/css/style-starter.css',
+  '/assets/images/pexels-mali-64208.jpg',
+  '/icons/icon-192x192.png'
 ];
 
 self.addEventListener('install', (event) => {
